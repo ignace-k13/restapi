@@ -5,7 +5,7 @@ import be.abis.exercise.model.Company;
 import be.abis.exercise.model.Person;
 import org.springframework.stereotype.Repository;
 
-import javax.annotation.PostConstruct;
+import jakarta.annotation.PostConstruct;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Iterator;
