@@ -9,11 +9,12 @@ import jakarta.annotation.PostConstruct;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 @Repository
 public class PersonFileRepository implements PersonRepository {
 
-	private ArrayList<Person> allPersons= new ArrayList<Person>();;
+	private List<Person> allPersons= new ArrayList<Person>();;
 	private String fileLoc = "/temp/javacourses/personsAPI.csv";
 
 	@PostConstruct
@@ -22,7 +23,7 @@ public class PersonFileRepository implements PersonRepository {
 	}
 
 	@Override
-	public ArrayList<Person> getAllPersons() {
+	public List<Person> getAllPersons() {
 		return allPersons;
 	}
 

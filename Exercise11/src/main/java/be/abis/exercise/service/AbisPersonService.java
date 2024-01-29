@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class AbisPersonService implements PersonService {
@@ -15,7 +16,7 @@ public class AbisPersonService implements PersonService {
 	PersonRepository personRepository;
 	
 	@Override
-	public ArrayList<Person> getAllPersons() {
+	public List<Person> getAllPersons() {
 		return personRepository.getAllPersons();
 	}
 
