@@ -14,7 +14,6 @@ public class CurrencyAPITest {
     @Autowired
     CurrencyService cs;
 
-
     @Test
     public void testGetRate() {
         String fromCur="EUR";
